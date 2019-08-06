@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+html {
+    font-size: 12px;
+}      
+.animalBox {
+   height: 500px;
+   background-color: black;
+   position: relative;
+  }
+  .green {
+      background-color: blue;
+      position: absolute;
+      top: -0.3rem;
+      left: -0.3rem;
+      width: 1rem;
+      height: 1rem; 
+  }
+  .green:hover {
+      background-color: #ccc;
+  }

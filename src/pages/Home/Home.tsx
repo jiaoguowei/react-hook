@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link} from 'react-router-dom';
 import Todos from '../../containers/VisibleTodoList';
+import LineEcahrts from '../../components/Lineecharts';
 
 function Home() {
 
@@ -24,6 +25,8 @@ function Home() {
             <button onClick={() => setBanner(banner + 2)}>add Banner</button>
             <Link to="/count">跳转到count页面</Link>
             <Todos/>
+            <LineEcahrts/>
+            <h1>表格下面的文字</h1>
         </div>
     )       
 }
