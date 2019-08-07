@@ -6,9 +6,11 @@ html {
     font-size: 12px;
 }      
 .animalBox {
-   height: 500px;
-   background-color: black;
-   position: relative;
+   height: 100vh;
+   /* background-color: black; */
+   /* position: relative; */
+   background-image: url('../../static/images/bigScreen.png');
+   background-position: center;
   }
   .green {
       background-color: blue;
@@ -21,3 +23,64 @@ html {
   .green:hover {
       background-color: #ccc;
   }
+  .wordBox{
+      width: 50vw;
+      margin: 0 auto;
+      font-size: 16px;
+      position: relative;
+  }
+  .wordBox .word {
+      height: 170px;
+      width: 17px;
+      writing-mode: vertical-rl;
+      color: #fff;
+      position: absolute;
+      left: 0;
+      top: 0;
+      /* transform:skew(-90deg);  */
+  }
+  .circleBanner{
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      background-color: #ccc;
+      border-radius: 50%;
+      position: absolute;
+     /* left: -300px; */
+      top: 0px; 
+  }
+  .circleBanner1{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: #ccc;
+    border-radius: 50%;
+    position: absolute;
+   /* left: 630px; */
+   top: -30px;
+    /* top: -80px;  */
+  }
+  .circleBanner .boxGroup{
+        width: 100px;
+        height: 100px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: none;
+      animation: rotate 10s infinite linear;
+  }
+  .circleBanner .innerBox1{
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: red;
+      transform-origin: center center;
+  }
+  @keyframes rotate{
+	100%{transform:rotate(360deg);}
+}
