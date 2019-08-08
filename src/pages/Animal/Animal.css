@@ -25,46 +25,45 @@ html {
   }
   .wordBox{
       width: 50vw;
+      height: 200px;
       margin: 0 auto;
-      font-size: 16px;
+      font-size: 18px;
       position: relative;
+      top: 50%;
+      /* background-color: #ccc; */
   }
   .wordBox .word {
       height: 170px;
       width: 17px;
       writing-mode: vertical-rl;
-      color: #fff;
+      color: rgba(0, 180, 255, 1);
+      margin-left: 20px;
       position: absolute;
       left: 0;
       top: 0;
       /* transform:skew(-90deg);  */
   }
   .circleBanner{
-      width: 100px;
-      height: 100px;
-      line-height: 100px;
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
       text-align: center;
-      background-color: #ccc;
+      /* background-color: #ccc; */
+      background:radial-gradient(circle,rgba(0, 44, 77, 0.2),rgba(0, 44, 77, 0.9), rgba(0, 98, 167, 1),rgba(0, 148, 218, 1));
+      /* opacity:0.88; */
       border-radius: 50%;
       position: absolute;
-     /* left: -300px; */
       top: 0px; 
-  }
-  .circleBanner1{
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-    text-align: center;
-    background-color: #ccc;
-    border-radius: 50%;
-    position: absolute;
-   /* left: 630px; */
-   top: -30px;
-    /* top: -80px;  */
+      z-index: 10;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      box-shadow: 0 0 5px rgba(0, 142, 210, 1);
+      border: 2px solid rgba(0, 154, 222, 0.5);
   }
   .circleBanner .boxGroup{
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 70px;
       position: absolute;
       left: 0;
       top: 0;
@@ -73,14 +72,66 @@ html {
   }
   .circleBanner .innerBox1{
       position: absolute;
-      right: 0;
+      right: 5px;
       top: 0;
-      width: 20px;
-      height: 20px;
+      width: 15px;
+      height: 15px;
       border-radius: 50%;
-      background-color: red;
+      background-color: rgba(0, 180, 255, 1);
       transform-origin: center center;
   }
+  .circleBanner .innerBox2{
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:rgba(255, 222, 0, 1);
+    transform-origin: center center;
+}
+.circleBanner .innerBox3{
+    position: absolute;
+    left: -10px;
+    top: 25px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(14, 251, 204, 1);
+    transform-origin: center center;
+}
   @keyframes rotate{
 	100%{transform:rotate(360deg);}
-}
+  }
+  .lightBox{
+      width: 50vw;
+      height: 600px;
+      margin: 0 auto;
+      /* background-color: #ccc; */
+      position: absolute;
+      left: 50%;
+      top: 10%;
+      margin-left: -20vw;
+      overflow: hidden;
+  }
+  .lightBox .light{
+    width: 3px;
+    height: 500px;
+    background: linear-gradient(0deg, #032d41, #0a99e9, #032d41);
+    animation: hueRotate 3s infinite alternate;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 100%;
+    z-index: 9;
+    opacity: 0.3;
+    /* transform: skewX(-15deg) */
+  }
+    @keyframes hueRotate {
+        100% {
+            /* filter: hue-rotate(90deg); */
+            filter: brightness(100%) opacity(100%) hue-rotate(45deg);
+        }
+    }
+
+   
