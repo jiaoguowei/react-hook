@@ -6,7 +6,9 @@ html {
     font-size: 12px;
 }      
 .animalBox {
-   height: 100vh;
+    width: 1920px;
+   /* height: 100vh; */
+   height: 1080px;
    /* background-color: black; */
    /* position: relative; */
    background-image: url('../../static/images/bigScreen.png');
@@ -24,12 +26,14 @@ html {
       background-color: #ccc;
   }
   .wordBox{
-      width: 50vw;
+      width: 60vw;
       height: 200px;
-      margin: 0 auto;
       font-size: 18px;
-      position: relative;
-      top: 50%;
+      position: absolute;
+      left: 50%;
+      top: -50%;
+      margin-left: -15vw;
+      /* transform: translateX(-30%); */
       /* background-color: #ccc; */
   }
   .wordBox .word {
@@ -53,17 +57,18 @@ html {
       /* opacity:0.88; */
       border-radius: 50%;
       position: absolute;
-      top: 0px; 
+      top: -40px; 
       z-index: 10;
       color: #fff;
       font-size: 14px;
       font-weight: 700;
       box-shadow: 0 0 5px rgba(0, 142, 210, 1);
       border: 2px solid rgba(0, 154, 222, 0.5);
+      transform: translateZ(0);
   }
   .circleBanner .boxGroup{
-        width: 70px;
-        height: 70px;
+    width: 70px;
+    height: 70px;
       position: absolute;
       left: 0;
       top: 0;
@@ -79,6 +84,7 @@ html {
       border-radius: 50%;
       background-color: rgba(0, 180, 255, 1);
       transform-origin: center center;
+      transform: translateZ(0);
   }
   .circleBanner .innerBox2{
     position: absolute;
@@ -89,6 +95,7 @@ html {
     border-radius: 50%;
     background-color:rgba(255, 222, 0, 1);
     transform-origin: center center;
+    transform: translateZ(0);
 }
 .circleBanner .innerBox3{
     position: absolute;
@@ -99,19 +106,20 @@ html {
     border-radius: 50%;
     background-color: rgba(14, 251, 204, 1);
     transform-origin: center center;
+    transform: translateZ(0);
 }
   @keyframes rotate{
 	100%{transform:rotate(360deg);}
   }
   .lightBox{
-      width: 50vw;
+      width: 60vw;
       height: 600px;
       margin: 0 auto;
       /* background-color: #ccc; */
       position: absolute;
       left: 50%;
-      top: 10%;
-      margin-left: -20vw;
+      top: 0%;
+      margin-left: -15vw;
       overflow: hidden;
   }
   .lightBox .light{

@@ -6,6 +6,8 @@ export const bannerData = [
     {id: 'five', value: '安全管理'},
     {id: 'six', value: '项目概况'},
     {id: 'seven', value: '智慧物料'},
+    {id: 'eight', value: '数字工地'},
+    {id: 'nine', value: '环境监测'},
 ]
 
 export const detailData = {
