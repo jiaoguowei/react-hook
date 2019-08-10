@@ -7,12 +7,11 @@ html {
 }      
 .animalBox {
     width: 1920px;
-   /* height: 100vh; */
    height: 1080px;
-   /* background-color: black; */
-   /* position: relative; */
    background-image: url('../../static/images/bigScreen.png');
    background-position: center;
+   transform: scale(1);
+   overflow: hidden;
   }
   .green {
       background-color: blue;
@@ -26,13 +25,13 @@ html {
       background-color: #ccc;
   }
   .wordBox{
-      width: 60vw;
+      width: 800px;
       height: 200px;
       font-size: 18px;
       position: absolute;
       left: 50%;
-      top: -50%;
-      margin-left: -15vw;
+      top: -500px;
+      margin-left: -400px;
       /* transform: translateX(-30%); */
       /* background-color: #ccc; */
   }
@@ -112,19 +111,17 @@ html {
 	100%{transform:rotate(360deg);}
   }
   .lightBox{
-      width: 60vw;
-      height: 600px;
-      margin: 0 auto;
-      /* background-color: #ccc; */
+      width: 800px;
+      height: 700px;
       position: absolute;
       left: 50%;
       top: 0%;
-      margin-left: -15vw;
+      margin-left: -400px;
       overflow: hidden;
   }
   .lightBox .light{
     width: 3px;
-    height: 500px;
+    height: 700px;
     background: linear-gradient(0deg, #032d41, #0a99e9, #032d41);
     animation: hueRotate 3s infinite alternate;
     position: absolute;

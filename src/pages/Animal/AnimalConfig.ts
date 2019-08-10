@@ -20,4 +20,4 @@ export const detailData = {
     'seven': ['产值3000万', '产值3000万', '产值3000万', '产值3000万', '产值3000万'],
 }
 
-export const lineCount = new Array(20).join().split('')
+export const lineCount = new Array(13).join().split('')
